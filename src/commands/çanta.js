@@ -15,6 +15,7 @@ let k;
         .setAuthor(message.guild.name, message.guild.iconURL({dynamic: true}))
         .setColor("RANDOM")
         .setDescription(`${çanta.map(function(a) { return `**${a.tane} - ${a.name}**\n${a.desc}\n` }).slice(0, 60).join("\n")}`)
+        .setFooter("Gösterilen ilk 60.")
         message.channel.send(embedd)
     },
 };
